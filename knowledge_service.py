@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Dict, Any, Optional, Union, Literal
 from pydantic import BaseModel, Field, field_validator
-from memory import TextMemory, DataSource, MemoryConfig
+from ttp_knowledge import TextMemory, DataSource, MemoryConfig
 import logging
 import uvicorn
 import time
@@ -530,7 +530,7 @@ async def get_system_info():
 
 if __name__ == "__main__":
     uvicorn.run(
-        "memory_service:app",
+        "knowledge_service:app",
         host="0.0.0.0",
         port=8009,
         reload=False
