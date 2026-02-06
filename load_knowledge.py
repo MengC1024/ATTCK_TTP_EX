@@ -3,17 +3,17 @@
 通过API加载数据到Memory系统的脚本
 
 用法:
-    python load_memory.py <file_path> [--no-clear] [--host <host>] [--port <port>]
+    python load_knowledge.py <file_path> [--no-clear] [--host <host>] [--port <port>]
 
 示例:
     # 清除现有memory并加载新数据（默认）
-    python load_memory.py data.json
+    python load_knowledge.py data.json
     
     # 不清除现有memory，追加加载
-    python load_memory.py data.json --no-clear
+    python load_knowledge.py data.json --no-clear
     
     # 指定API服务地址
-    python load_memory.py data.json --host localhost --port 8009
+    python load_knowledge.py data.json --host localhost --port 8009
 
 文件格式:
     JSON文件，包含记忆列表，每条记忆包含以下字段：
